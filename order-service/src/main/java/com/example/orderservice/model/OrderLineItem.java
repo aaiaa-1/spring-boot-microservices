@@ -9,12 +9,14 @@ import lombok.Setter;
 import java.math.BigDecimal;
 
 @Entity
-@Table(name = "t_order_line_items")
+@Table(name = "order_line_item")
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class OrderLineItems {
+public class OrderLineItem {
+    // this class represents an individual item within an order (ligne de commande)
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
